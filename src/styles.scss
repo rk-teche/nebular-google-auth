@@ -1,0 +1,36 @@
+@use 'themes' as *;
+
+@use '@nebular/theme/styles/globals' as *;
+
+@include nb-install() {
+@include nb-theme-global();
+};
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex{
+  display: flex;
+}
+.flex-1{
+flex:1;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+.w-100{
+  width: 100%;
+}
+.pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<nb-layout class="profile-wrap">
+    <nb-layout-column class="d-flex justify-content-center">
+
+        <nb-card class="w-100">
+            <nb-card-body>
+                <div class="card">
+                    <div class="left">
+                        <img
+                            [src]="userInfo?.picture" />
+                        <div class="img-border">
+                            <div class="img-border">
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h2 class="text-color">{{userInfo?.name}}</h2>
+                            <p class="text-color">Angular Developer</p>
+                        </div>
+                        <div class="card-btn">
+                            <a [href]="userInfo?.link" target="_blank">Follow {{userInfo?.family_name}}</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <h3>523</h3>
+                            <p>Posts</p>
+                        </div>
+                        <div>
+                            <h3>1387</h3>
+                            <p>Likes</p>
+                        </div>
+                        <div>
+                            <h3>146</h3>
+                            <p>Followers</p>
+                        </div>
+                    </div>
+                </div>
+                <button nbButton (click)="logout()" class="pointer" style="margin-top: 15px;">Logout</button>
+            </nb-card-body>
+        </nb-card>
+
+    </nb-layout-column>
+</nb-layout>

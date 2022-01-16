@@ -1,0 +1,144 @@
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.profile-wrap {
+  .layout{
+    background: rgb(204, 127, 79);
+    background: linear-gradient(
+      235deg,
+      rgba(204, 127, 79, 1) 0%,
+      rgba(237, 188, 107, 1) 100%
+    );
+    
+  }
+  nb-card-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.text-color{
+  color: rgb(204, 127, 79)
+}
+
+.card {
+  width: 300px;
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 1px #0007;
+
+  .left {
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #786450;
+    }
+
+    .card-info {
+      padding-top: 20px;
+      h2 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .card-btn {
+      padding-top: 15px;
+      gap: 10px;
+
+      button {
+        width: 100px;
+        background: transparent;
+        border: 1px solid #786450;
+        border-radius: 100vw;
+        padding: 7px;
+        font-weight: 700;
+        font-size: 11px;
+        color: #786450;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+          color: #fff;
+          background: #786450;
+        }
+      }
+    }
+
+    .img-border {
+      position: absolute;
+      top: 24px;
+      width: 80px;
+      height: 80px;
+      border-right: 1px solid transparent;
+      border-left: 1px solid #786450;
+      border-top: 1px solid #786450;
+      border-bottom: 1px solid #786450;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 1.5s ease-in-out;
+      
+      &:hover{
+        transform: rotate(-360deg);
+      }
+      
+      .img-border {
+        position: absolute;
+        top: 2px;
+        width: 74px;
+        height: 74px;
+        border-left: 1px solid transparent;
+        border-right: 1px solid #786450;
+        transition: transform 1.5s ease-in-out;
+        
+         &:hover{
+        transform: rotate(720deg);
+      }
+      }
+    }
+        img {
+          width: 70px;
+          border-radius: 50%;
+        }
+  }
+
+  .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      color: #796551;
+      background: #f5e8df;
+      cursor: pointer;
+      transition: background 0.3s linear;
+
+      &:hover {
+        background: #d9bdaa;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
